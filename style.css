@@ -1,5 +1,131 @@
-*{
-    margin:0;
-    padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bungee+Spice&family=Fjalla+One&family=Marcellus&family=Poppins:wght@300;900&family=Sawarabi+Gothic&family=Staatliches&family=Zilla+Slab:wght@300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
     box-sizing: border-box;
+    font-family: SF PRO DISPLAY;
 }
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page>nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 13vh;
+    width: 65vw;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    background-color: #000;
+}
+#page>nav>.up{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65vw;
+    height: 47%;
+    padding: 0% 3px;
+}
+@font-face {
+    font-family: l;
+    src: url(./font/sf-pro-text_light.woff2);
+}
+@font-face {
+    font-family: se;
+    src: url(./font/sf-pro-text_semibold.woff2);
+}
+@font-face {
+    font-family: re;
+    src: url(./font/sf-pro-text_regular.woff2);
+}
+#page>nav>.up>h3{
+    opacity: 0.7;
+    font-family: l;
+    font-size: 12px;
+    font-weight: 100;
+}
+#page>nav>.up>.logo{
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+}
+#page>nav>.down{
+    position: relative;
+    padding: 0 5px 0 0;
+    width: 65vw;
+    height: 60%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+#page>nav>.down>button{
+    font-size: 12px;
+    padding: 5px 14px;
+    border-radius: 46px;
+    border: none;
+    font-family: l;
+    background-color: #fff;
+}
+#page>nav>.down>h3{
+    font-family: se;
+    font-weight: 400;
+}
+#page>video{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    object-fit: cover;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page-bottom{
+    height: 20%;
+    width: 25%;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page-bottom>h3{
+    color: #dadada93;
+    margin-bottom: 1vw;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+
