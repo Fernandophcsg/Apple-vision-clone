@@ -31,16 +31,63 @@ ScrollTrigger.refresh();
 }
 loco()
 
+gsap.to("#page>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page>.black-bg`,
+        start:`70% top`,
+        end:`bottom top`,
+        scrub:1,
+        scroller:`#main`,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0.5)`
+})
+
+
 gsap.to("#page>video",{
     scrollTrigger:{
         trigger:`#page>video`,
-        start:`2% top`,
+        start:`5% top`,
         end:`bottom top`,
         scroller:`#main`,
+        // markers:true
     },
     onStart:()=>{
         document.querySelector("#page>video").play()
     }
+})
+gsap.to("#page>video",{
+    scrollTrigger:{
+        trigger:`#page>video`,
+        start:`top top`,
+        end:`bottom top`,
+        scroller:`#main`,
+        // markers:true,
+        scrub:0.1
+    },
+   scale:1.1
+})
+gsap.from("#page>video",{
+    scrollTrigger:{
+        trigger:`#page>video`,
+        start:`top top`,
+        end:`5% top`,
+        scroller:`#main`,
+        // markers:true,
+    },
+    opacity:0
+})
+gsap.to("#page>img",{
+    scrollTrigger:{
+        trigger:`#page>img`,
+        start:`100px top`,
+        end:`120px top`,
+        scroller:`#main`,
+        // markers:true,
+    },
+    duration:0.01,
+    scale:0.5,
+    opacity:0
 })
 gsap.to("nav",{
     scrollTrigger:{
@@ -71,7 +118,92 @@ gsap.to("#page-bottom",{
         start:`-300% top`,
         end:`-200% top`,
         scroller:`#main`,
-        scrub:.5,
+        
     },
     opacity:0
+})
+
+// --------------------------------------------------------------------------------------
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:`#page1`,
+        start:`top top`,
+        scrub:1,
+        scroller:`#main`,
+        pin:true,
+        // markers:true
+    },
+    // backgroundColor:``
+})
+
+
+tl.to("#page1>h1",{
+    top:`-50%`
+})
+
+gsap.to("#page1>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page1>.black-bg`,
+        start:`5% top`,
+        end:`130% 50%`,
+        scrub:0.1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0)`
+})
+gsap.to("#page1>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page1>.black-bg`,
+        start:`130% top`,
+        end:`170% 50%`,
+        scrub:0.1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0.4)`
+})
+
+
+var tl1 = gsap.timeline({
+    scrollTrigger:{
+        trigger:`#page2`,
+        start:`top top`,
+        scrub:1,
+        scroller:`#main`,
+        pin:true,
+        // markers:true
+    }
+})
+
+
+tl1.to("#page2>h1",{
+    top:`-50%`
+})
+
+gsap.to("#page2>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page2>.black-bg`,
+        start:`5% top`,
+        end:`130% 50%`,
+        scrub:1,
+        scroller:`#main`,
+        // pin:true,
+        markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0.2)`
+})
+gsap.to("#page2>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page2>.black-bg`,
+        start:`130% top`,
+        end:`170% 50%`,
+        scrub:1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0.6)`
 })
