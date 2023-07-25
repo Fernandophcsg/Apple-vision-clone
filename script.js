@@ -191,7 +191,7 @@ gsap.to("#page2>.black-bg",{
         scrub:1,
         scroller:`#main`,
         // pin:true,
-        markers:true
+        // markers:true
     },
     backgroundColor: `rgba(0, 0, 0, 0.2)`
 })
@@ -206,4 +206,88 @@ gsap.to("#page2>.black-bg",{
         // markers:true
     },
     backgroundColor: `rgba(0, 0, 0, 0.6)`
+})
+
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:`#page3`,
+        start:`top top`,
+        scrub:1,
+        scroller:`#main`,
+        pin:true,
+        // markers:true
+    },
+    // backgroundColor:``
+})
+
+
+tl.to("#page3>h1",{
+    top:`-50%`
+})
+
+gsap.to("#page3>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page1>.black-bg`,
+        start:`5% top`,
+        end:`130% 50%`,
+        scrub:0.1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0)`
+})
+gsap.to("#page3>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page1>.black-bg`,
+        start:`130% top`,
+        end:`170% 50%`,
+        scrub:0.1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0.4)`
+})
+
+var tl = gsap.timeline({
+    scrollTrigger:{
+        trigger:`#page4`,
+        start:`top top`,
+        scrub:1,
+        scroller:`#main`,
+        pin:true,
+        // markers:true
+    },
+    // backgroundColor:``
+})
+
+
+tl.to("#page4>h1",{
+    top:`-50%`
+})
+
+gsap.to("#page4>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page1>.black-bg`,
+        start:`5% top`,
+        end:`130% 50%`,
+        scrub:0.1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0)`
+})
+gsap.to("#page4>.black-bg",{
+    scrollTrigger:{
+        trigger:`#page1>.black-bg`,
+        start:`130% top`,
+        end:`170% 50%`,
+        scrub:0.1,
+        scroller:`#main`,
+        // pin:true,
+        // markers:true
+    },
+    backgroundColor: `rgba(0, 0, 0, 0.4)`
 })

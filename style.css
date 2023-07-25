@@ -164,9 +164,9 @@ body {
     font-size: 3vw;
     color: #fff;
     font-family: re;
+    letter-spacing: -1px;
     font-weight: 999;
     position: absolute;
-    letter-spacing: -1px;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
@@ -193,8 +193,74 @@ body {
     object-fit: cover;
 }
 #page2>h1{
-    font-size: 4vw;
-    font-family: se;
+    font-size: 3vw;
+    font-family: re;
+    letter-spacing: -1px;
+    font-weight: 999;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    z-index: 101;
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page3>.black-bg{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+#page3>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page3>h1{
+    font-size: 3vw;
+    font-family: re;
+    letter-spacing: -1px;
+    font-weight: 999;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    z-index: 101;
+}
+#page4{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page4>.black-bg{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+}
+#page4>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page4>h1{
+    font-size: 3vw;
+    font-family: re;
+    letter-spacing: -1px;
+    font-weight: 999;
     position: absolute;
     bottom: 10%;
     left: 50%;
