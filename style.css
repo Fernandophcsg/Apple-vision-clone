@@ -271,3 +271,30 @@ body {
     font-weight: 400;
     z-index: 101;
 }
+
+
+#page5{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page5>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page5>h1{
+    font-size: 3vw;
+    font-family: re;
+    letter-spacing: -1px;
+    font-weight: 999;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    z-index: 101;
+}
